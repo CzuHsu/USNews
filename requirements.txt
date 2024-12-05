@@ -3,7 +3,7 @@ matplotlib
 pandas
 numpy
 wordcloud
-scipy.stats
+scipy
 nltk
 sklearn
 re
