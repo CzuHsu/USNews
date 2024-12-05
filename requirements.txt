@@ -6,5 +6,4 @@ wordcloud
 scipy
 nltk
 scikit-learn
-re
 seaborn
