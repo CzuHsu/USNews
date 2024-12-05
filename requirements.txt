@@ -2,3 +2,9 @@ streamlit
 matplotlib
 pandas
 numpy
+wordcloud
+scipy.stats
+nltk
+sklearn
+re
+seaborn
