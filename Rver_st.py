@@ -17,9 +17,9 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 # Load Data
-nyt_data = pd.read_csv("/Users/czu/Desktop/VSC/Project_USNews/data/NT.csv")  
-wapo_data = pd.read_csv("/Users/czu/Desktop/VSC/Project_USNews/data/WT.csv")   
-wsj_data = pd.read_csv("/Users/czu/Desktop/VSC/Project_USNews/data/WS.csv")   
+nyt_data = pd.read_csv("NT.csv")
+wapo_data = pd.read_csv("WS.csv")
+wsj_data = pd.read_csv("WT.csv")
 
 data = pd.concat([
     nyt_data.assign(source="nyt"),
@@ -383,7 +383,7 @@ According to the figure, it shows:
 #}).reset_index()
 st.subheader("Summary of Sentiment Score")
 #st.write(sentiment_summary)
-summary = pd.read_csv("/Users/czu/Desktop/VSC/Project_USNews/data/sentiment_summary.csv",
+summary = pd.read_csv("sentiment_summary.csv",
                       index_col=1)
 summary = summary.drop(columns=["Unnamed: 0"])
 st.write(summary)
